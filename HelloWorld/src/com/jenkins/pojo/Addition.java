@@ -1,3 +1,5 @@
+package com.jenkins.pojo;
+
 public class Addition {
 	
 	public void add(){
