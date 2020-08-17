@@ -1,0 +1,1 @@
+Whenever a new change is pushed to GIT, Jenkins should trigger a build automatically.
