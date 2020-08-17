@@ -2,5 +2,10 @@ package com.jenkins.pojo;
 
 public class HelloWorld {
 	
-	public int index = 1;
+	public void testMethod() {
+		Addition add = new Addition();
+		add.add();
+	}
+	
+	
 }
