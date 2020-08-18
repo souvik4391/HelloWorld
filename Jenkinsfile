@@ -4,11 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				echo 'Hello World'
+		
+		echo 'Hello World'
 				
-                bat label: '', script: '''C:\\Users\\sopal\\.jenkins\\workspace\\HelloWorld\\HelloWorld\\src\\com\\jenkins\\pojo
-							javac Addition.java
-							jar -cvf Addition.jar Addition.class'''
+                bat label: '', script: '''cd C:\\Users\\sopal\\.jenkins\\workspace\\HelloWorld\\HelloWorld\\src\\com\\jenkins\\pojo
+			       javac Addition.java
+			       jar -cvf Addition.jar Addition.class'''
 							
                 archiveArtifacts artifacts: '/target/, .jar', followSymlinks: false
             }
