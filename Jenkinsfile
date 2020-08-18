@@ -2,10 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Build Stage') {
+        stage('Build') {
             steps {
-                bat 'make' 
-                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
+				echo 'Hello World'
+				
+                bat label: '', script: '''C:\\Users\\sopal\\.jenkins\\workspace\\HelloWorld\\HelloWorld\\src\\com\\jenkins\\pojo
+							javac Addition.java
+							jar -cvf Addition.jar Addition.class'''
+							
+                archiveArtifacts artifacts: '/target/, .jar', followSymlinks: false
             }
         }
     }
