@@ -11,7 +11,7 @@ pipeline {
 			       javac Addition.java
 			       jar -cvf Addition.jar Addition.class'''
 							
-                archiveArtifacts artifacts: '/target/, .jar', followSymlinks: false
+                archiveArtifacts artifacts: 'jar,ear', followSymlinks: false
             }
         }
     }
