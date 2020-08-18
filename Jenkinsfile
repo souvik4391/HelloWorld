@@ -17,7 +17,7 @@ pipeline {
 	
    post {
      always {
-               archiveArtifacts artifacts: '**/*.min.*', onlyIfSuccessful: true
+               archiveArtifacts artifacts: '**/*.*', onlyIfSuccessful: true
           }
     }
 }
