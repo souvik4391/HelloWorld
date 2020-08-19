@@ -2,7 +2,8 @@ package com.jenkins.pojo;
 
 public class DevBranchClass {
 
-	public void devBranch() {
-		System.out.println("hello");
+	public void devBranchChecking() {
+		
+		System.out.println("This is a dev branch checkin only");
 	}
 }
